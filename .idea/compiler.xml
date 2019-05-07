@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="txjava_common" />
+        <module name="txjava_eureka" />
+        <module name="txjava_eureka4" />
+        <module name="txjava_order" />
+        <module name="txjava_user" />
+        <module name="txjava_zuul" />
+        <module name="txjava_zuul4" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="txjava_admin" target="1.8" />
+      <module name="txjava_admin_consumer" target="1.8" />
+      <module name="txjava_common" target="1.8" />
+      <module name="txjava_eureka" target="1.8" />
+      <module name="txjava_eureka2" target="1.8" />
+      <module name="txjava_eureka3" target="1.8" />
+      <module name="txjava_eureka4" target="1.8" />
+      <module name="txjava_myeureka" target="1.8" />
+      <module name="txjava_myzuul" target="1.8" />
+      <module name="txjava_order" target="1.8" />
+      <module name="txjava_parent" target="1.8" />
+      <module name="txjava_user" target="1.8" />
+      <module name="txjava_zuul" target="1.8" />
+      <module name="txjava_zuul2" target="1.8" />
+      <module name="txjava_zuul3" target="1.8" />
+      <module name="txjava_zuul4" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

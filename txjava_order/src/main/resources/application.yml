@@ -1,0 +1,14 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: txjava-order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.1.63.78:3306/yushibo
+    username: eop
+    password: mysql
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
