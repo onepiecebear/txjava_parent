@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: txjava-zuul
+
+#config server 地址
+#application name + profile版本(dev开发，por生产，test测试)
+#分支
+
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900
+      profile: dev
+      label: config-file
+
+

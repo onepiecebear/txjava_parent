@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="txjava_common" />
+        <module name="txjava_config" />
         <module name="txjava_eureka" />
         <module name="txjava_eureka4" />
         <module name="txjava_order" />
@@ -19,6 +20,7 @@
       <module name="txjava_admin" target="1.8" />
       <module name="txjava_admin_consumer" target="1.8" />
       <module name="txjava_common" target="1.8" />
+      <module name="txjava_config" target="1.8" />
       <module name="txjava_eureka" target="1.8" />
       <module name="txjava_eureka2" target="1.8" />
       <module name="txjava_eureka3" target="1.8" />

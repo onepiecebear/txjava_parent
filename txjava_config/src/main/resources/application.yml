@@ -1,0 +1,18 @@
+server:
+  port: 7900
+spring:
+  application:
+    name: txjava-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/XiaoGouXiong/config-file.git
+          username: yushibom@qq.com
+          password: q285459607
+          #主目录下的文件路径
+          search-paths: config-file
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka

@@ -24,6 +24,20 @@
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
 
+        <!--config客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+
+
+        <!--config配置文件手动刷新机制-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

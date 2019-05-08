@@ -13,6 +13,7 @@
         <module>txjava_order</module>
         <module>txjava_eureka</module>
         <module>txjava_zuul</module>
+        <module>txjava_config</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -3,13 +3,22 @@ package cn.tx.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Component
+//提供重新注入能力
+@RefreshScope
+
 public class PreFilter  extends ZuulFilter{
+
+    @Value("${token}")
+    private boolean token;
+
     @Override
     //过滤器类型
     public String filterType() {
@@ -32,6 +41,7 @@ public class PreFilter  extends ZuulFilter{
 //    框架未对返回值做处理
 
     public Object run() throws ZuulException {
+        System.out.println("token:"+token);
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         String token = request.getHeader("token");
