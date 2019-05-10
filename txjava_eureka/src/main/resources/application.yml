@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 9000
 spring:
   application:
     name: txjava-eureka4
@@ -11,7 +11,8 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
-security:
-  user:
-    name: yushibo
-    password: 1qaz@WSX
+  server:
+    #关闭自我保护机制，保证服务及时踢出
+    enable-self-preservation: false
+    #时间为2S
+    eviction-interval-timer-in-ms: 2000

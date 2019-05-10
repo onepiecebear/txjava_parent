@@ -14,6 +14,8 @@
         <module>txjava_eureka</module>
         <module>txjava_zuul</module>
         <module>txjava_config</module>
+        <module>txjava_sleuth</module>
+        <module>txjava_kafka</module>
     </modules>
     <packaging>pom</packaging>
 

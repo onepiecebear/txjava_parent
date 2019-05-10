@@ -1,0 +1,12 @@
+
+spring:
+  kafka:
+    producer:
+      #kafka服务地址，可配置多个，以逗号分隔
+      bootstrap-servers: 10.1.117.71:
+      #消息KEY的编解码方式
+      key-serializer: org.apache. kafka.common.serialization.StringSerializer
+      #消息体的编解码方式
+      value-serializer: org.apache. kafka.common.serialization.StringSerializer
+
+

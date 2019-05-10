@@ -1,5 +1,5 @@
 server:
-  port: 7900
+  port: 9040
 spring:
   application:
     name: txjava-config
@@ -15,4 +15,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8888/eureka
+      defaultZone: http://localhost:9000/eureka

@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 9010
 spring:
   application:
     name: txjava-order
@@ -11,4 +11,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8888/eureka
+      defaultZone: http://localhost:9000/eureka
+  #设置心跳等待时间与续约时间
+  #测试时将值设置小些，保证服务关闭后注册中心能及时踢除服务
+  instance:
+    #客户端向服务器端发送心跳的时间间隔，单位为秒
+    lease-renewal-interval-in-seconds: 1
+    #服务器在收到最后一次心跳之后等待的时间上限，单位为秒，超过则踢除
+    lease-expiration-duration-in-seconds: 2
